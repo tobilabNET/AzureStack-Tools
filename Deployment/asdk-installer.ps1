@@ -26,7 +26,6 @@ The Azure Stack Development Kit installer UI script is based on PowerShell and t
 #>
 
 #requires –runasadministrator
-
 #region Text
 $Text_Generic = @{}
 $Text_Generic.Version = "1.0.13"
