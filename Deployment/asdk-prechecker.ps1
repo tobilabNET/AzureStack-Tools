@@ -248,8 +248,8 @@ function CheckCPU {
 
     write-host -ForegroundColor yellow "["(date -format "HH:mm:ss")"]" "Checking processor information..."
 
-    $CPUCount = (Get-WmiObject -class Win32_ComputerSystem –computername $ENV:COMPUTERNAME).NumberOfProcessors # cpu socket count now displaying correctly 
-    $CoreCount =  (Get-WmiObject -class win32_processor –computername $ENV:COMPUTERNAME).numberOfCores # CPU core count now displaying correctly
+    $CPUCount = (Get-WmiObject -class Win32_ComputerSystem).NumberOfProcessors # cpu socket count now displaying correctly 
+    $CoreCount =  (Get-WmiObject -class win32_processor).numberOfCores # CPU core count now displaying correctly
     write-host -ForegroundColor gray "["(date -format "HH:mm:ss")"]" " -- Number of CPU sockets = $CPUCount"
     write-host -ForegroundColor gray "["(date -format "HH:mm:ss")"]" " -- Number of physical cores =  $CoreCount"
 
