@@ -19,7 +19,7 @@ The Azure Stack Development Kit Pre-Checker script is a PowerShell script publis
 https://github.com/Azure/AzureStack-Tools
 #>
 
-# requires –runasadministrator
+#requires –runasadministrator
 
 function CheckNestedVirtualization {
 
